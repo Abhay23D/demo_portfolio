@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhay Lachure | DevOps Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height:100vh;
+  background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+  background-size:400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+@keyframes gradientBG{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 0;
+}
+
+/* Glass Card */
+.glass{
+  background: rgba(255,255,255,0.1);
+  border-radius:20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow:0 8px 32px rgba(0,0,0,0.37);
+  padding:40px;
+  margin-bottom:40px;
+  transition: all 0.4s ease;
+}
+
+.glass:hover{
+  transform: translateY(-8px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* Navbar */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:50px;
+}
+
+nav h1{
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav ul li{
+  cursor:pointer;
+  position:relative;
+}
+
+nav ul li::after{
+  content:"";
+  width:0%;
+  height:2px;
+  background:#00f5ff;
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  transition:0.4s;
+}
+
+nav ul li:hover::after{
+  width:100%;
+}
+
+/* Hero Section */
+.hero{
+  text-align:center;
+  padding:60px 20px;
+}
+
+.hero h2{
+  font-size:42px;
+  font-weight:700;
+}
+
+.hero span{
+  color:#00f5ff;
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:18px;
+  opacity:0.9;
+}
+
+.btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:12px 30px;
+  border-radius:30px;
+  background: linear-gradient(45deg,#00f5ff,#00c6ff);
+  color:#000;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.4s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #00f5ff;
+}
+
+/* Skills */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.skill-box{
+  padding:20px;
+  border-radius:15px;
+  background:rgba(255,255,255,0.08);
+  text-align:center;
+  transition:0.4s;
+}
+
+.skill-box:hover{
+  background:rgba(0,245,255,0.2);
+  transform:scale(1.05);
+}
+
+.skill-box h4{
+  margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:0.7;
+}
+
+@media(max-width:768px){
+  .hero h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+  <h1>Abhay Lachure</h1>
+  <ul>
+    <li>About</li>
+    <li>Skills</li>
+    <li>Experience</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<div class="glass hero">
+  <h2>Production Support Engineer → <span>DevOps / SRE</span></h2>
+  <p>Pune, India | 3.8+ Years in Banking & Payments Domain</p>
+  <p>Specialized in Incident Management, Linux, SQL, Monitoring & Production Stability.</p>
+  <a href="#" class="btn">View Resume</a>
+</div>
+
+<div class="glass">
+  <h2 style="margin-bottom:30px;">Core Skills</h2>
+  <div class="skills">
+    <div class="skill-box">
+      <h4>Linux / Unix</h4>
+      <p>Process Mgmt, Shell Scripting, Performance Monitoring</p>
+    </div>
+    <div class="skill-box">
+      <h4>SQL / Oracle</h4>
+      <p>Joins, RCA Queries, Performance Tuning</p>
+    </div>
+    <div class="skill-box">
+      <h4>Monitoring</h4>
+      <p>AppDynamics, Netcool, Kibana</p>
+    </div>
+    <div class="skill-box">
+      <h4>Cloud</h4>
+      <p>AWS, OpenShift, Containers</p>
+    </div>
+    <div class="skill-box">
+      <h4>CI/CD</h4>
+      <p>Jenkins, Git, Deployment Pipelines</p>
+    </div>
+    <div class="skill-box">
+      <h4>Incident Mgmt</h4>
+      <p>Major Incident Handling, SLA Adherence</p>
+    </div>
+  </div>
+</div>
+
+<div class="glass">
+  <h2 style="margin-bottom:20px;">Professional Snapshot</h2>
+  <p>
+    Mechanical Engineering graduate turned BFSI Production Support Specialist.
+    Worked with enterprise banking applications supporting high-priority incidents,
+    deployments, SOD/EOD checks, and critical fraud systems.
+  </p>
+  <br>
+  <p>
+    Reduced alert noise by 50% through monitoring optimization and proactive RCA.
+    Led application transition and supported 40+ monthly releases with zero SLA breaches.
+  </p>
+</div>
+
+<div class="glass">
+  <h2 style="margin-bottom:20px;">Career Goal</h2>
+  <p>
+    Transitioning into DevOps/SRE to build scalable, automated and resilient systems.
+    Currently upskilling in Kubernetes, Docker, Cloud Infrastructure and Automation.
+  </p>
+</div>
+
+<footer>
+  © 2026 Abhay Lachure | Built with Passion for DevOps 🚀
+</footer>
+
+</div>
+
+</body>
+</html>
